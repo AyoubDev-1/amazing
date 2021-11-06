@@ -1,0 +1,51 @@
+.header-front > h1{ 
+  font-weight: bold;
+}
+.main-section {
+  /* background-color: #222222; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.project {
+  position: relative;
+  width: 315px;
+  height: 195px;
+  border-radius: 10px;
+  margin: 15px 15px;
+  cursor: pointer;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+
+.pro-cover {
+  width: 315px;
+  height: 0px;
+  background-color: #ffb400;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+}
+
+.project:hover .pro-cover {
+  height: 195px;
+}
+
+.project > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project > div {
+  color: white;
+  font-size: 30px;
+}
